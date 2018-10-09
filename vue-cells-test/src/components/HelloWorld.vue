@@ -15,12 +15,88 @@
             </p>
         </Panel>
         <Panel name="3">
-            待补充
-            <p slot="content">。。。</p>
+            水平堆叠图：
+            <p slot="content" style="background:#aaa">
+              <j-bar-hori-stack></j-bar-hori-stack>
+            </p>
         </Panel>
         <Panel name="4">
-            待补充
-            <p slot="content">。。。</p>
+            基本饼图
+            <p slot="content" style="background:#aaa">
+              <j-base-pie :itemData = 'itemDataList'></j-base-pie>
+            </p>
+        </Panel>
+        <Panel name="5">
+            进度条
+            <p slot="content" style="background:#aaa">
+              <j-rate-bar></j-rate-bar>
+            </p>
+        </Panel>
+         <Panel name="6">
+            echarts实现的带时间轴饼图
+            <p slot="content" style="background:#aaa">
+              <j-mult-pie></j-mult-pie>
+            </p>
+        </Panel>
+         <Panel name="7">
+            简单列表
+            <p slot="content" style="background:#aaa">
+              <j-simple-list></j-simple-list>
+            </p>
+        </Panel>
+         <Panel name="8">
+            标题
+            <p slot="content" style="background:#aaa">
+              <j-title-label></j-title-label>
+            </p>
+        </Panel>
+         <Panel name="9">
+            标题2
+            <p slot="content" style="background:#aaa">
+              <j-vh-title></j-vh-title>
+            </p>
+        </Panel>
+         <Panel name="10">
+            条形图
+            <p slot="content" style="background:#aaa">
+              <j-x-bar></j-x-bar>
+            </p>
+        </Panel>
+         <Panel name="11">
+            折线图
+            <p slot="content" style="background:#aaa">
+              <j-x-line></j-x-line>
+            </p>
+        </Panel>
+         <Panel name="12">
+            折线图条形图
+            <p slot="content" style="background:#aaa">
+              <j-xline-bar></j-xline-bar>
+            </p>
+        </Panel>
+         <Panel name="13">
+            列表2
+            <p slot="content" style="background:#aaa">
+              <j-x-list></j-x-list>
+            </p>
+        </Panel>
+         <Panel name="14">
+            序号
+            <p slot="content" >
+              <j-x-number></j-x-number>
+            </p>
+        </Panel>
+         <Panel name="15">
+            特殊饼图
+            <p slot="content" >
+              <j-x-pie></j-x-pie>
+            </p>
+        </Panel>
+         <Panel name="16" >
+            堆叠图
+            <p slot="content" style="background:#ccc">
+              <j-x-pile-bar></j-x-pile-bar>
+            </p>
         </Panel>
     </Collapse>
     
@@ -35,6 +111,43 @@ export default {
   name: 'app',
   data () {
     return {
+      itemDataList:[
+        [
+          { value: 40, name: "金融业", props: "12%" },
+          { value: 20, name: "现代物流业", props: "12%" },
+          { value: 15, name: "现代信息业", props: "12%" },
+          { value: 18, name: "科技服务业", props: "12%" },
+          { value: 7, name: "其他服务业", props: "12%" }
+        ],
+        [
+          { value: 40, name: "金融业", props: "12%" },
+          { value: 20, name: "现代物流业", props: "12%" },
+          { value: 5, name: "现代信息业", props: "12%" },
+          { value: 18, name: "科技服务业", props: "12%" },
+          { value: 7, name: "其他服务业", props: "12%" }
+        ],
+        [
+          { value: 4, name: "金融业", props: "12%" },
+          { value: 20, name: "现代物流业", props: "12%" },
+          { value: 15, name: "现代信息业", props: "12%" },
+          { value: 18, name: "科技服务业", props: "12%" },
+          { value: 7, name: "其他服务业", props: "12%" }
+        ],
+        [
+          { value: 40, name: "金融业", props: "12%" },
+          { value: 20, name: "现代物流业", props: "12%" },
+          { value: 15, name: "现代信息业", props: "12%" },
+          { value: 8, name: "科技服务业", props: "12%" },
+          { value: 7, name: "其他服务业", props: "12%" }
+        ],
+        [
+          { value: 40, name: "金融业", props: "12%" },
+          { value: 2, name: "现代物流业", props: "12%" },
+          { value: 1, name: "现代信息业", props: "12%" },
+          { value: 18, name: "科技服务业", props: "12%" },
+          { value: 7, name: "其他服务业", props: "12%" }
+        ]
+      ],
       value:'1',
       msg: 'Welcome to Your Vue.js App',
       dataofcolorblock:[{
